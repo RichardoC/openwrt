@@ -1,7 +1,7 @@
 FROM ubuntu:20.04
 
 # Required to prevent interactive time prompt
-ENV TZ=Europe/London
+ENV TZ=UTC
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # From Ubuntu
